@@ -20,6 +20,8 @@ data = pd.read_csv(csv_file_name)
 print(data.head())
 ```
 
+Access tech: manual file download and load/read
+
 Pros:
 - easy to access. The CSV file is straightfoward and easy to understand.
 - CSV file could be access, read and edit directly.
@@ -77,12 +79,15 @@ print_csv_sample('movies.csv')
 print_csv_sample('ratings.csv')
 ```
 
+Access tech: manual file download and load/read.
+
 Pros:
-simplify the file management and transfer as multiple files are bundle into one.
-efficient in downloading multiple files.
+- simplify the file management and transfer as multiple files are bundle into one.
+- efficient in downloading multiple files.
 
 Cons:
-longer processing time required to upload the and read the file.
+- longer processing time required to upload the and read the file.
+- limitation to upload large file size to some platform due to file size
 
 
 # JSON 
@@ -125,9 +130,12 @@ URL link
 url = 'https://data.cityofnewyork.us/api/views/c3uy-2p5r/rows.json?accessType=DOWNLOAD'
 fetch_json_sample(url)
 ```
+
+Access tech: API connection over HTTPS to access structure data
+
 Pros:
 - easy to access and process the data
-- JSOn file could easily read, understand the - structure.
+- JSOn file could easily read, understand the structure.
 - supported by APIs easy to access with various types of applications.
 
 Cons:
