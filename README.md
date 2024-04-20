@@ -30,6 +30,8 @@ Cons:
 - the loading process takes longer with large datasets
 
 # ZIP file
+link to download zip file: https://zenodo.org/records/7665868
+
 set up the libraries and upload the file
 ```python
 import zipfile
